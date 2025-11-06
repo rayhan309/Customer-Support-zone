@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.banner {
+    @apply h-[250px] rounded-md
+}
+
+
+.bannerImg {
+    position: relative;
+    background-image: 
+        url('./assets/vector1.png'),
+        linear-gradient(125.07deg, #632EE3, #9F62F2);
+    background-position: left center, center;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+}
+.bannerImg2 {
+    position: relative;
+    background-image: 
+        url('./assets/vector1.png'),
+        linear-gradient(125.07deg, #54CF68, #00827A);
+    background-position: left center, center;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+}
+
