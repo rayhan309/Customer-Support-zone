@@ -1,22 +1,31 @@
 import './App.css'
-import Banner from './components/banner/Banner';
-import Navber from './components/navber/Navber';
+ import Navber from './components/navber/Navber';
 import Footer from './components/footer/Footer'
+import Issus from './components/issus_manegments/Issus';
+import { Suspense } from 'react';
+import Loading from './components/loading/Loading';
+
+const fetchPromiss = async () => {
+  const res = await fetch('/data.json')
+  return res.json();
+}
 
 function App() {
 
+  const promissData = fetchPromiss()
+
   return (
     <>
-   {/* navber */}
-   <Navber></Navber>
+      {/* navber */}
+      <Navber></Navber>
 
-   {/* banner */}
-   <Banner></Banner>
+      {/* issusmanegments */}
+      <Suspense fallback={<Loading> </Loading>}>
+        <Issus promissData={promissData}></Issus>
+      </Suspense>
 
-
-
-   {/* footer */}
-    <Footer></Footer>
+      {/* footer */}
+      <Footer></Footer>
     </>
   )
 }

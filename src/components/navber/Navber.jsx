@@ -1,6 +1,6 @@
 const Navber = () => {
     return (
-        <nav className='shadow-md mb-4 border-b-2 border-purple-200'>
+        <nav className='shadow mb-4 border-b border-purple-100'>
             <div className="max-w-[1450px] mx-auto flex justify-between items-center p-4">
                 <div>
                     <h2 className='md:text-2xl text-xl font-bold'>CS — Ticket System</h2>
