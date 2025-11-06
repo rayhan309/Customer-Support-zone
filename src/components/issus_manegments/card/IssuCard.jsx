@@ -1,12 +1,17 @@
 import Card from "./Card";
 
-const IssuCard = ({ issus }) => {
+const IssuCard = ({ data, setIsIn_Progress, isIn_Progress }) => {
 
     return (
         <>
             <div className="grid grid-cols-2 gap-3">
                 {
-                    issus.map(issu => <Card key={issu.id} issu={issu}></Card>)
+                    data.map(issu => <Card
+                        key={issu.id}
+                        issu={issu}                        
+                        data={data}
+                        setIsIn_Progress={setIsIn_Progress}
+                        isIn_Progress={isIn_Progress}></Card>)
                 }
             </div>
         </>

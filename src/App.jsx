@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import { ToastContainer } from 'react-toastify';
  import Navber from './components/navber/Navber';
 import Footer from './components/footer/Footer'
 import Issus from './components/issus_manegments/Issus';
@@ -26,6 +27,10 @@ function App() {
 
       {/* footer */}
       <Footer></Footer>
+
+
+
+      <ToastContainer />
     </>
   )
 }

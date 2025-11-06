@@ -14,7 +14,7 @@
     "description": "Payment fails when using Visa card",
     "customer": "Sarah Khan",
     "priority": "MEDIUM PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-10-30"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Customer reports delayed email notifications",
     "customer": "Emily Smith",
     "priority": "HIGH PRIORITY",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-10-25"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Users cannot upload profile photos",
     "customer": "Priya Patel",
     "priority": "MEDIUM PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-10-29"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Search returns unrelated products",
     "customer": "Fatima Noor",
     "priority": "MEDIUM PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-11-02"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Users not getting password reset email",
     "customer": "Anna Lee",
     "priority": "HIGH PRIORITY",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-10-27"
   },
   {
@@ -104,7 +104,7 @@
     "description": "Auto-renewal not working for premium users",
     "customer": "Maria Silva",
     "priority": "MEDIUM PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-11-04"
   },
   {
@@ -122,7 +122,7 @@
     "description": "Some French translations missing in settings",
     "customer": "Paul Dupont",
     "priority": "HIGH PRIORITY",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-10-20"
   },
   {
@@ -131,7 +131,7 @@
     "description": "API request times out after 30s for large data",
     "customer": "Jason Kim",
     "priority": "MEDIUM PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-11-03"
   }
 ]
