@@ -1,5 +1,5 @@
 const ResolvedCard = ({resolvedData}) => {
-    console.log(resolvedData)
+    
     return (
         <div className="px-3 py-3 mt-4 bg-white hover:bg-gray-200 rounded-lg">
             <h2 className='text-lg font-medium text-[#001931]'>{resolvedData.title}</h2>

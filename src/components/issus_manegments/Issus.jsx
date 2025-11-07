@@ -14,9 +14,8 @@ const Issus = ({ promissData }) => {
 
     const isProgress = isIn_Progress.filter(card => card.status == "In-Progress")
     const isResolved = isIn_Progress.filter(card => card.status == "Resolved")
-
-    // const [isResolved, setIsResolved] = useState([])
-    // console.log("resolved", isResolved)
+    console.log(isIn_Progress)
+    console.log(isResolved)
 
     return (
         <>

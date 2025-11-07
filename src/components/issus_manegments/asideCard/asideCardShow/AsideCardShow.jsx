@@ -3,10 +3,13 @@ import { toast } from "react-toastify";
 const AsideCardShow = ({ isIn_ProgressData, isIn_Progress, setIsIn_Progress }) => {
 
     const complitBtnHandler = () => {
-        toast("Resolved!")
+        toast("Resolved Done!")
         const setResolved = isIn_ProgressData;
         setResolved.status = "Resolved";
-        setIsIn_Progress([...isIn_Progress, setResolved])
+
+        const filteredIsIn_Progress = isIn_Progress.filter(data => data.id != setResolved.id)
+
+        setIsIn_Progress([...isIn_Progress, filteredIsIn_Progress])
     }
         return (
             <div className="px-3 py-3 mt-4 bg-white hover:bg-gray-200 rounded-lg">
