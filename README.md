@@ -1,16 +1,25 @@
-# React + Vite
+ ### ✅ Readme: 
+--- answer the following question-
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ - What is JSX, and why is it used?
+ - What is the difference between State and Props?
+ - What is the useState hook, and how does it work?
+ - How can you share state between components in React?
+ - How is event handling done in React? 
 
-Currently, two official plugins are available:
+<!-- answer in jsx -->
+ 1. jsx, জাভা স্ক্রিপ্টের একটা সিনটেক্স যার রিঅ্যাক্ট এর মধ্যে ব্যবহার করা হয় এটার মাধ্যমে জাভাস্ক্রিপ্ট এর মধ্যে সরাসরি এইচটিএমএল এর  ইলেমেন্ট এর মতো ইলিমেন্ট  লেখা যায়,
+ জেএস এক্স ব্যবহার করার কিছু কারণ হলো কোড লেখার সুবিধা এবং  এটা ডেভলপারের জন্য করতে আরো সহজ ও ছোট ছোট অংশে ভাগ করে রাখতে সাহায্য করে যার ফলে কোন প্রবলেম হলে নির্দিষ্ট জায়গায় ছোট ছোট ভাগে ভাগ করার ফলে তাড়াতাড়ি ভুল ধরা যায়,
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- difference between State and Props -->
+ 2. স্টার্ট হল কোন একটা মান বা কিছু একটাকে সেট করে সময় বা ক্লিকের মাধ্যমে বা কিছু সব শর্তসাপেক্ষে , আর props হলো প্যারেন্ট থেকে চাইল্ডে ভ্যালু বা কোন কিছু যেকোনো কিছুই পাঠাইতে সাহায্য করে আর এটার মধ্যে পার্থক্য হল স্টার্ট দিয়ে কোন কিছুর মান চেঞ্জ করা যায়, props দিয়ে তা করা যায় না
 
-## React Compiler
+<!-- What is the useState hook, and how does it work? -->
+ 3. ইউজেস্টার্ড হলো রিঅ্যাক্ট এর একটা হোক যা দিয়ে কোন কিছু এর প্রাথমিক মান বা ভ্যালু কোন কিছুর সাপেক্ষে শর্তসাপেক্ষে চেঞ্জ করা যায় যা আমাদের কাজটা করে দেয়,
+ ইউজেস্টার্ড হলো কোন একটা একাধিক যেমন অ্যারে অবজেক্ট  মান বা যে কোন কিছু প্রাথমিক পর্যায়ে যেটা সেট করা হয় তারপরে যে ইউজার ইন্টারফেসকে আরো ডায়নামিক করার জন্য শর্তসাপেক্ষে ইউ আই চেঞ্জ করা এবং ইউজেস্টার্ড দিয়ে এই কাজটা আরো দূরত্ব হয়,
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<!-- How can you share state between components in React? -->
+ 4. আমরা প্যারেন্টের ডিক্লেয়ার করা useState ভিন্ন ভিন্ন কম্পনেন্ট ব্যবহার করতে চাইলে এটাকে props এর মাধ্যমে পাঠিয়ে ব্যবহার করি আমরা হয,
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<!-- How is event handling done in React? -->
+ 5. রিয়াক্টে এ ইভেন হ্যান্ডেল করা হয় প্রায়ই javascript এর মত তবে রিয়াক্ট এর কিছু ইউজাবল ফাংশনালিটির কারণে এটা আমরা usestate ডিক্লেয়ার করে তারপরে useState  টাকে props আকারে কম্পনেন্ট a পাঠিয়ে সাধারণত আমরা এভাবেই ইভেন হ্যান্ডেলিং এর কাজ করি react a,
