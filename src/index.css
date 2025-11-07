@@ -3,7 +3,15 @@
 
 
 .banner {
-    @apply h-[250px] rounded-md
+    @apply h-[200px] md:h-[250px] rounded-md
+}
+
+.bannertext1 {
+    @apply text-[40px] md:text-[60px] font-semibold text-white text-center
+}
+
+.bannertext2 {
+    @apply text-center mt-14 md:mt-18 text-white text-xl md:text-2xl font-normal
 }
 
 

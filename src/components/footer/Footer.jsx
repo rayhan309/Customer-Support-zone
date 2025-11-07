@@ -7,7 +7,7 @@ const footer = () => {
     return (
         <>
         <footer className="bg-neutral">
-            <div className="footer sm:footer-horizontal  text-neutral-content p-10 mt-24 container mx-auto">
+            <div className="footer sm:footer-horizontal  text-neutral-content p-10 mt-18 md:mt-24 container mx-auto">
                 <nav>
                     <h6 className="footer-title">CS — Ticket System</h6>
                     <a className=" text-xs font-normal text-gray-400">Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry. Lorembr <br /> Ipsum has been the industry's standard <br /> dummy text ever since the 1500s, when an <br /> unknown printer took a galley of type and <br /> scrambled it to make a type specimen book.</a>
@@ -44,7 +44,7 @@ const footer = () => {
 
         <div className="bg-neutral">
            <div className="container mx-auto border-t-2 border-gray-700 py-7">
-             <h3 className="text-white font-normal text-center">© 2025 CS — Ticket System. All rights reserved.</h3>
+             <h3 className="text-gray-500 font-normal text-center">© 2025 CS — Ticket System. All rights reserved.</h3>
            </div>
         </div>
         </>

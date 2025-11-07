@@ -1,23 +1,41 @@
 const Navber = () => {
     return (
-        <nav className='shadow mb-4 border-b border-purple-100'>
-            <div className="max-w-[1450px] mx-auto flex justify-between items-center p-4">
-                <div>
-                    <h2 className='md:text-2xl text-xl font-bold'>CS — Ticket System</h2>
+        <div className="bg-base-100 shadow-sm">
+            <div className="navbar max-w-[1450px] mx-auto">
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul
+                            tabIndex="-1"
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>FAQ</a></li>
+                            <li><a>Changelog</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Download</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a className="btn btn-ghost text-xl md:text-2xl font-medium md:font-bold">CS — Ticket System</a>
                 </div>
-                <div className='flex items-center'>
-                    <ul className="flex gap-4">
-                        <li className='text-sm text-gray-500'><a href="/">Home</a></li>
-                        <li className='text-sm text-gray-500'><a href="/">FAQ</a></li>
-                        <li className='text-sm text-gray-500'><a href="/">Changelog</a></li>
-                        <li className='text-sm text-gray-500'><a href="/">Blog</a></li>
-                        <li className='text-sm text-gray-500'><a href="/">Download</a></li>
-                        <li className='text-sm text-gray-500 mr-3'><a href="/">Contact</a></li>
+                <div className="navbar-end hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1">
+                        <li className="text-[14px] font-normal text-gray-500"><a>Home</a></li>
+                        <li className="text-[14px] font-normal text-gray-500"><a>FAQ</a></li>
+                        <li className="text-[14px] font-normal text-gray-500"><a>Changelog</a></li>
+                        <li className="text-[14px] font-normal text-gray-500"><a>Blog</a></li>
+                        <li className="text-[14px] font-normal text-gray-500"><a>Download</a></li>
+                        <li className="text-[14px] font-normal text-gray-500"><a>Contact</a></li>
+                        <a className="btn bg-linear-to-r to-[#9F62F2] from-[#632EE3] text-[16px] font-medium text-white">+ Button</a>
                     </ul>
-                    <button className='px-4 py-2 rounded-lg hover:cursor-pointer bg-linear-to-r to-[#9F62F2] from-[#632EE3] text-white'>+ New Ticket</button>
+                </div>
+                <div className="navbar-end md:hidden block text-right">
+                    <a className="btn bg-linear-to-r to-[#9F62F2] from-[#632EE3] text-[16px] font-medium text-white">+ Button</a>
                 </div>
             </div>
-        </nav>
+        </div>
     );
 };
 

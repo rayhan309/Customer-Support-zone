@@ -30,14 +30,14 @@ const Card = ({ issu, data, setIsIn_Progress, isIn_Progress }) => {
             </div>
             <h3 className='text-[16px] font-normal text-[#627382]'>{description}</h3>
             <div className='flex justify-between items-center mt-3'>
-                <div className='flex items-center gap-3'>
-                    <p className='text-[14px] font-medium text-[#627382]'># {id}</p>
-                    <p className={`text-[14px] font-medium ${priority == "HIGH PRIORITY" ? 'text-red-500' : 'text-[#FEBB0C]'}`}>{priority}</p>
+                <div className='flex items-center gap-2 md:gap-3'>
+                    <p className='text-xs md:text-[14px] font-medium text-[#627382]'># {id}</p>
+                    <p className={`text-xs md:text-[14px] font-medium ${priority == "HIGH PRIORITY" ? 'text-red-500' : 'text-[#FEBB0C]'}`}>{priority}</p>
                 </div>
                 <div className='flex items-center gap-3'>
-                    <p className='text-[14px] font-normal text-[#627382]'>{name}</p>
+                    <p className='text-xs text-[14px] font-normal text-[#627382]'>{name}</p>
                     <img src={calender} alt="Clender" />
-                    <p className='text-[14px] font-normal text-[#627382]'>{createdAt}</p>
+                    <p className='text-xs text-[14px] font-normal text-[#627382]'>{createdAt}</p>
                 </div>
             </div>
         </div>
