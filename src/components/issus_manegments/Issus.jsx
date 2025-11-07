@@ -14,8 +14,8 @@ const Issus = ({ promissData }) => {
 
     const isProgress = isIn_Progress.filter(card => card.status == "In-Progress")
     const isResolved = isIn_Progress.filter(card => card.status == "Resolved")
-    console.log(isIn_Progress)
-    console.log(isResolved)
+    // console.log(isIn_Progress)
+    // console.log(isResolved)
 
     return (
         <>
@@ -31,10 +31,10 @@ const Issus = ({ promissData }) => {
                             isIn_Progress={isIn_Progress}></IssuCard>
                     </div>
                     <div className='col-span-3'>
-                        <AsideCard isProgress={isProgress} isIn_Progress={isIn_Progress} setIsIn_Progress={setIsIn_Progress} isResolved={isResolved}></AsideCard>
+                        <AsideCard data={data} setData={setData} isProgress={isProgress} isIn_Progress={isIn_Progress} setIsIn_Progress={setIsIn_Progress} isResolved={isResolved}></AsideCard>
                     </div>
                 </div>
-             </div>
+            </div>
         </>
     );
 };

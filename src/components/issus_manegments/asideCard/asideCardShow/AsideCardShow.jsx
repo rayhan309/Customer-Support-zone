@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 
-const AsideCardShow = ({ isIn_ProgressData, isIn_Progress, setIsIn_Progress }) => {
+const AsideCardShow = ({ data, setData, isIn_ProgressData, isIn_Progress, setIsIn_Progress }) => {
 
     const complitBtnHandler = () => {
         toast("Resolved Done!")
@@ -8,6 +8,11 @@ const AsideCardShow = ({ isIn_ProgressData, isIn_Progress, setIsIn_Progress }) =
         setResolved.status = "Resolved";
 
         const filteredIsIn_Progress = isIn_Progress.filter(data => data.id != setResolved.id)
+
+        const filteredData = data.filter(d => d.id != setResolved.id)
+        // console.log(filteredData)
+
+        setData([...filteredData])
 
         setIsIn_Progress([...isIn_Progress, filteredIsIn_Progress])
     }
