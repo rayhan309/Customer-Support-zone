@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+.gFont {
+     font-family: "Inter", sans-serif;
+}
 
 .banner {
     @apply h-[200px] md:h-[250px] rounded-md

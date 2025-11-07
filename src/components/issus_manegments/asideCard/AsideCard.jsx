@@ -5,7 +5,7 @@ const AsideCard = ({data, setData, isIn_Progress, setIsIn_Progress, isProgress, 
     return (
         <>
         <div className="bg-gray-200 p-3 rounded-lg">
-             <h2 className='text-2xl font-semibold text-gray-700'>Task Status</h2>
+             <h2 className='text-2xl font-semibold text-gray-700 gFont'>Task Status</h2>
              <div>
                 {
                     isProgress.length == 0 ? <p className="mt-3 text-gray-600">Select a ticket to add to Task Status</p> : isProgress.map(isIn_ProgressData => <AsideCardShow 
@@ -23,7 +23,7 @@ const AsideCard = ({data, setData, isIn_Progress, setIsIn_Progress, isProgress, 
              <h2 className='text-2xl font-semibold text-gray-700'>Resolved Task</h2>
              <div>
                 {
-                    isResolved.length == 0 ? <p className="mt-3 text-gray-600">No resolved tasisProgressks yet.</p> : isResolved.map(resolvedData => <ResolvedCard key={resolvedData.id} resolvedData={resolvedData}></ResolvedCard>)
+                    isResolved.length == 0 ? <p className="mt-3 text-gray-600 gFont">No resolved tasisProgressks yet.</p> : isResolved.map(resolvedData => <ResolvedCard key={resolvedData.id} resolvedData={resolvedData}></ResolvedCard>)
                 }
              </div>
         </div>

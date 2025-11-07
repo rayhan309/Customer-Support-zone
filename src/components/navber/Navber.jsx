@@ -1,6 +1,6 @@
 const Navber = () => {
     return (
-        <div className="bg-base-100 shadow-sm">
+        <div className="bg-base-100 shadow-sm gFont">
             <div className="navbar max-w-[1450px] mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -18,7 +18,7 @@ const Navber = () => {
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl md:text-2xl font-medium md:font-bold">CS — Ticket System</a>
+                    <a className="text-xl md:text-2xl font-medium md:font-bold">CS — Ticket System</a>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
