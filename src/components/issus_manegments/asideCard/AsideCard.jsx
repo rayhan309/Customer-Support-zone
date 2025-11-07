@@ -1,8 +1,31 @@
-const AsideCard = () => {
+import AsideCardShow from "./asideCardShow/asideCardShow";
+import ResolvedCard from "./resolvedCard/ResolvedCard";
+
+const AsideCard = ({ isIn_Progress, setIsIn_Progress, isProgress, isResolved }) => {
     return (
-        <div className='borde-2 border-yellow-100 bg-yellow-500 text-white'>
-            <h2>hello world</h2>
+        <>
+        <div className="bg-gray-200 p-3 rounded-lg">
+             <h2 className='text-2xl font-semibold text-gray-700'>Task Status</h2>
+             <div>
+                {
+                    isProgress.length == 0 ? <p className="mt-3 text-gray-600">Select a ticket to add to Task Status</p> : isIn_Progress.map(isIn_ProgressData => <AsideCardShow 
+                        key={isIn_ProgressData.id} 
+                        isIn_ProgressData={isIn_ProgressData} 
+                        setIsIn_Progress={setIsIn_Progress} 
+                        isIn_Progress={isIn_Progress}
+                        ></AsideCardShow>)
+                }
+             </div>
         </div>
+        <div className="bg-gray-200 p-3 mt-3 rounded-lg">
+             <h2 className='text-2xl font-semibold text-gray-700'>Task Status</h2>
+             <div>
+                {
+                    isResolved.length == 0 ? <p className="mt-3 text-gray-600">Select a ticket to add to Task Status</p> : isIn_Progress.map(resolvedData => <ResolvedCard resolvedData={resolvedData}></ResolvedCard>)
+                }
+             </div>
+        </div>
+        </>
     );
 };
 

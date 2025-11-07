@@ -11,7 +11,12 @@ const Issus = ({ promissData }) => {
     const [data, setData] = useState(issus);
 
     const [isIn_Progress, setIsIn_Progress] = useState([])
-    console.log(isIn_Progress)
+
+    const isProgress = isIn_Progress.filter(card => card.status == "In-Progress")
+    const isResolved = isIn_Progress.filter(card => card.status == "Resolved")
+
+    // const [isResolved, setIsResolved] = useState([])
+    // console.log("resolved", isResolved)
 
     return (
         <>
@@ -27,7 +32,7 @@ const Issus = ({ promissData }) => {
                             isIn_Progress={isIn_Progress}></IssuCard>
                     </div>
                     <div className='col-span-3'>
-                        <AsideCard></AsideCard>
+                        <AsideCard isProgress={isProgress} isIn_Progress={isIn_Progress} setIsIn_Progress={setIsIn_Progress} isResolved={isResolved}></AsideCard>
                     </div>
                 </div>
              </div>
